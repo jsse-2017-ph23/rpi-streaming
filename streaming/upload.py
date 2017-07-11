@@ -3,7 +3,7 @@ import uuid
 from math import floor
 
 BUCKET_NAME = 'jsse-2017.appspot.com'
-DIRECTORY = '/webcam-images/'
+DIRECTORY = 'webcam-images/'
 
 
 def upload(picture, time, storage):
