@@ -1,6 +1,7 @@
 import os
 from time import sleep
 
+import json
 from google.cloud import storage
 from google.oauth2 import service_account
 from picamera import PiCamera
@@ -9,12 +10,13 @@ from streaming.main_loop import main_loop
 
 
 def storage_client_factory():
-    json = os.getenv('GOOGLE_SERVICE_KEY')
-    if json is None:
+    key = os.getenv('GOOGLE_SERVICE_KEY')
+    if key is None:
         raise RuntimeError('GOOGLE_SERVICE_KEY environment variable is not set. Check README.md, service key section '
                            'for details')
-    credentials = service_account.Credentials.from_service_account_info(json)
+    credentials = service_account.Credentials.from_service_account_info(json.loads(key))
     return storage.Client(credentials=credentials)
+
 
 def main():
     client = storage_client_factory()
