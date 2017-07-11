@@ -24,5 +24,5 @@ pipenv --three install --dev # Install local dependencies
 ## Execution
 __Remember to set google service key first__
 ```bash
-pipenv shell python3 main.py
+pipenv run python main.py
 ```
