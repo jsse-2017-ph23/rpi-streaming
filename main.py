@@ -10,15 +10,13 @@ from picamera import PiCamera
 
 from streaming.main_loop import main_loop
 
-logger = logging.getLogger('Root')
 # Set up logging
-handler = logging.StreamHandler()
-formatter = logging.Formatter(
-    '[%(asctime)s] [%(name)s / %(threadName)s / %(levelname)s] %(message)s',
-    '%H:%M:%S')
-handler.setFormatter(formatter)
-logger.addHandler(handler)
-logger.setLevel(logging.DEBUG)
+logging.basicConfig(
+    format='[%(asctime)s] [%(name)s / %(threadName)s / %(levelname)s] %(message)s',
+    datefmt='%H:%M:%S',
+    level=logging.DEBUG
+)
+logger = logging.getLogger('Root')
 
 
 def storage_client_factory():
