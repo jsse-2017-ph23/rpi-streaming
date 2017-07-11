@@ -29,7 +29,7 @@ def storage_client_factory():
     parse = json.loads(key)
     logger.debug('Got google service key. It is valid JSON.')
     credentials = service_account.Credentials.from_service_account_info(parse)
-    return storage.Client(credentials=credentials)
+    return storage.Client('jsse-2017', credentials=credentials)
 
 
 def main():
