@@ -14,7 +14,7 @@ def main_loop(camera, storage):
     while True:
         thread = TickThread(camera, storage)
         thread.start()
-        sleep(2)
+        sleep(5)
 
 
 class TickThread(threading.Thread):
