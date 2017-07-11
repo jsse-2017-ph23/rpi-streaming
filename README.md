@@ -9,7 +9,7 @@ See this [tutorial](https://thepihut.com/blogs/raspberry-pi-tutorials/16021420-h
 ## Get service account key
 Service account is required for uploading image to cloud storage. See [here](https://cloud.google.com/docs/authentication/getting-started#auth-cloud-implicit-python) for instruction to get the key.
 
-Set the _CONTENT_ of the JSON file downloaded to environment variable `$GOOGLE_SERVICE_ACCOUNT_KEY`.
+Set the _CONTENT_ of the JSON file downloaded to environment variable `$GOOGLE_SERVICE_KEY`.
 
 ## Install dependencies
 Run the following commands:
