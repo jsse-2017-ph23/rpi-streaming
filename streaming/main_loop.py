@@ -12,18 +12,26 @@ logger = logging.getLogger('MainLoop')
 
 def main_loop(camera, storage):
     while True:
-        threading.Thread(target=tick, name="tick", args=[camera, storage])
+        thread = TickThread(camera, storage)
+        thread.start()
         sleep(2)
 
 
-def tick(camera, storage):
-    logger.debug('Attempting to take picture')
-    picture = take_picture(camera)
-    logger.debug('Picture successfully taken')
+class TickThread(threading.Thread):
+    def __init__(self, camera, storage):
+        super(TickThread, self).__init__()
+        self.camera = camera
+        self.storage = storage
 
-    time = datetime.utcnow()
-    logger.debug('Time now is %s', time)
+    def run(self):
+        logger.debug('Attempting to take picture')
+        logger.debug('Picture successfully taken')
+        picture = take_picture(self.camera)
 
-    logger.debug('Starting to upload')
-    upload(picture, time, storage)
-    logger.debug('Upload completed')
+        time = datetime.utcnow()
+        logger.debug('Time now is %s', time)
+
+        logger.debug('Starting to upload')
+        upload(picture, time, self.storage)
+        logger.debug('Upload completed')
+
