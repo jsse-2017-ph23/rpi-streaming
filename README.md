@@ -1,7 +1,9 @@
 # rpi-streaming
-Docker image for streaming webcam photo to cloud storage
+Python script for streaming webcam photo to cloud storage
 
-__WARNING__: This image is designed to run on _ARM_ architecture. x64 computer will not able to run this image.
+__WARNING__: This script is designed to run on _ARM_ architecture. x64 computer will not able to run this script.
+
+In fact, non-raspberry pi computer cannot install one of the dependency.
 
 ## Set up camera for raspberry PI
 See this [tutorial](https://thepihut.com/blogs/raspberry-pi-tutorials/16021420-how-to-install-use-the-raspberry-pi-camera)
