@@ -8,6 +8,7 @@ COPY . /srv/
 WORKDIR /srv/
 RUN apt-get update \
   && apt-get install python3 python3-pip \
+  && pip3 install setuptools \
   && pip3 install pipenv \
   && pipenv --three install --dev
 
