@@ -3,6 +3,9 @@ Docker image for streaming webcam photo to cloud storage
 
 __WARNING__: This image is designed to run on _ARM_ architecture. x64 computer will not able to run this image.
 
+## Set up camera for raspberry PI
+See this [tutorial](https://thepihut.com/blogs/raspberry-pi-tutorials/16021420-how-to-install-use-the-raspberry-pi-camera)
+
 ## Get service account key
 Service account is required for uploading image to cloud storage. See [here](https://cloud.google.com/docs/authentication/getting-started#auth-cloud-implicit-python) for instruction to get the key.
 
