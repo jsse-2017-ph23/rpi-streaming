@@ -1,0 +1,77 @@
+{
+    "_meta": {
+        "hash": {
+            "sha256": "db75e096fc12f31b618f7c55fa384be3ab95509c69d4cd9b6d6b0d8aa9e68823"
+        },
+        "requires": {},
+        "sources": [
+            {
+                "url": "https://pypi.python.org/simple",
+                "verify_ssl": true
+            }
+        ]
+    },
+    "default": {
+        "cachetools": {
+            "version": "==2.0.0"
+        },
+        "certifi": {
+            "version": "==2017.4.17"
+        },
+        "chardet": {
+            "version": "==3.0.4"
+        },
+        "google-auth": {
+            "version": "==1.0.1"
+        },
+        "google-auth-httplib2": {
+            "version": "==0.0.2"
+        },
+        "google-cloud-core": {
+            "version": "==0.25.0"
+        },
+        "google-cloud-storage": {
+            "version": "==1.2.0"
+        },
+        "google-resumable-media": {
+            "version": "==0.1.1"
+        },
+        "googleapis-common-protos": {
+            "version": "==1.5.2"
+        },
+        "httplib2": {
+            "version": "==0.10.3"
+        },
+        "idna": {
+            "version": "==2.5"
+        },
+        "picamera": {
+            "version": "==1.13"
+        },
+        "protobuf": {
+            "version": "==3.3.0"
+        },
+        "pyasn1": {
+            "version": "==0.2.3"
+        },
+        "pyasn1-modules": {
+            "version": "==0.0.9"
+        },
+        "requests": {
+            "version": "==2.18.1"
+        },
+        "rsa": {
+            "version": "==3.4.2"
+        },
+        "setuptools": {
+            "version": "==36.0.1"
+        },
+        "six": {
+            "version": "==1.10.0"
+        },
+        "urllib3": {
+            "version": "==1.21.1"
+        }
+    },
+    "develop": {}
+}
