@@ -25,8 +25,8 @@ class TickThread(threading.Thread):
 
     def run(self):
         logger.debug('Attempting to take picture')
-        logger.debug('Picture successfully taken')
         picture = take_picture(self.camera)
+        logger.debug('Picture successfully taken')
 
         time = datetime.utcnow()
         logger.debug('Time now is %s', time)
