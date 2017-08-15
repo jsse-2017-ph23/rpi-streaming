@@ -2,7 +2,7 @@ import uuid
 
 from math import floor
 
-BUCKET_NAME = 'jsse-2017.appspot.com'
+BUCKET_NAME = 'turbo-chainsaw'
 DIRECTORY = 'webcam-images/'
 
 
