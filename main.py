@@ -37,7 +37,7 @@ def main():
     logger.debug('Google cloud storage initialized')
 
     camera = PiCamera()
-    camera.start_preview()
+    camera.start_preview(alpha=128)
     logger.info('Warming up camera')
     sleep(2)
 
