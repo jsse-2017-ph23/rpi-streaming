@@ -28,7 +28,7 @@ class TickThread(threading.Thread):
         picture = take_picture(self.camera)
         logger.debug('Picture successfully taken')
 
-        time = datetime.utcnow()
+        time = datetime.now()  # Seems that using local timezone will work, given all devices are at same tz
         logger.debug('Time now is %s', time)
 
         logger.debug('Starting to upload')
