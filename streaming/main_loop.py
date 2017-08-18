@@ -34,4 +34,3 @@ class TickThread(threading.Thread):
         logger.debug('Starting to upload')
         upload(picture, time, self.storage)
         logger.debug('Upload completed')
-

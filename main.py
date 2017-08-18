@@ -44,5 +44,6 @@ def main():
     logger.info('Initialization completed')
     main_loop(camera, client)
 
+
 if __name__ == '__main__':
     main()
