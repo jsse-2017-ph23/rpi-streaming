@@ -1,4 +1,6 @@
 # rpi-streaming
+[![Travis](https://img.shields.io/travis/jsse-2017-ph23/rpi-streaming.svg?style=flat-square)](https://travis-ci.org/jsse-2017-ph23/rpi-streaming)
+
 Python script for streaming webcam photo to cloud storage
 
 __WARNING__: This script is designed to run on _ARM_ architecture. x64 computer will not able to run this script.
