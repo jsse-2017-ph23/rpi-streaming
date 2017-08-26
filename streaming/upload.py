@@ -2,7 +2,7 @@ import uuid
 
 from math import floor
 
-BUCKET_NAME = 'turbo-chainsaw'
+BUCKET_NAME = 'laughing-guacamole'
 DIRECTORY = 'webcam-images/'
 
 
